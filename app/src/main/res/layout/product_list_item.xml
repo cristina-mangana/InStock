@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/mediumPadding"
+    android:paddingRight="@dimen/mediumPadding">
+
+    <RelativeLayout
+        android:layout_width="@dimen/listImageDimen"
+        android:layout_height="@dimen/listImageDimen">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/product_image"
+            android:layout_width="@dimen/listImageDimen"
+            android:layout_height="@dimen/listImageDimen"
+            android:paddingLeft="@dimen/mediumPadding"
+            android:paddingRight="@dimen/mediumPadding"
+            tools:src="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/product_stock"
+            android:layout_width="@dimen/listStockDimen"
+            android:layout_height="@dimen/listStockDimen"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@drawable/round_background"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"
+            tools:text="@string/stock_placeholder" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/smallPadding"
+        android:paddingStart="@dimen/smallPadding">
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/primary_text_style"
+            android:ellipsize="end"
+            android:lines="1"
+            tools:text="@string/name_placeholder" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/product_price"
+                style="@style/secondary_text_style"
+                tools:text="@string/old_price_placeholder" />
+
+            <TextView
+                android:id="@+id/product_discount_price"
+                style="@style/secondary_text_style"
+                android:layout_marginLeft="@dimen/smallPadding"
+                android:layout_marginStart="@dimen/smallPadding"
+                android:visibility="gone"
+                tools:text="@string/price_placeholder" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/sales_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:padding="@dimen/bigPadding"
+        android:src="@drawable/ic_shopping_cart_selector" />
+
+</LinearLayout>

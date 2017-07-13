@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/bigPadding"
+        android:layout_weight="1"
+        android:src="@drawable/empty_view" />
+
+    <TextView
+        style="@style/subhead_center_text"
+        android:layout_marginBottom="@dimen/separation"
+        android:layout_marginLeft="@dimen/bigPadding"
+        android:layout_marginRight="@dimen/bigPadding"
+        android:layout_marginTop="@dimen/mediumPadding"
+        android:text="@string/no_products" />
+</LinearLayout>

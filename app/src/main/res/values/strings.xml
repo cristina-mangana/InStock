@@ -1,0 +1,101 @@
+<resources>
+    <!-- App Name-->
+    <string name="app_name" translatable="false">InStock</string>
+
+    <!-- Text placeholders-->
+    <string name="name_placeholder" translatable="false">Product name</string>
+    <string name="price_placeholder" translatable="false">19,90€</string>
+    <string name="old_price_placeholder" translatable="false">22,90€</string>
+    <string name="discount_placeholder" translatable="false">10%</string>
+    <string name="stock_placeholder" translatable="false">22</string>
+    <string name="reference_placeholder" translatable="false">22F55COX</string>
+    <string name="comments_placeholder" translatable="false">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Integer tempus, nibh nec auctor ultrices, ipsum leo porttitor eros, id
+        tristique arcu dui eu urna. Etiam facilisis molestie ultrices.
+    </string>
+    <string name="total_sales_number_placeholder" translatable="false">10</string>
+    <string name="total_sales_money_placeholder" translatable="false">220,90€</string>
+
+    <!--Action button titles [CHAR LIMIT = 10]-->
+    <string name="action_order">Order</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_done">Done</string>
+
+    <!-- No products text [CHAR LIMIT = NONE]-->
+    <string name="no_products">Oops! There are no products to display. Click the button to add a
+        new product</string>
+
+    <!-- Section headers-->
+    <string name="stock_header">Current stock</string>
+    <string name="ordered_header">Is ordered?</string>
+    <string name="ordered_no">No</string>
+    <string name="ordered_yes">Yes</string>
+    <string name="price_header">Price</string>
+    <string name="discount_header">Discount</string>
+    <string name="comments_header">Comments</string>
+    <string name="total_sales_header">Total sales</string>
+
+    <!-- EditText hints-->
+    <string name="name_hint">Name</string>
+    <string name="reference_hint">Reference</string>
+    <string name="price_hint">Price</string>
+    <string name="discount_hint">Discount</string>
+    <string name="stock_hint">0</string>
+    <string name="comments_hint">Add comments</string>
+
+    <!-- Price and discount units-->
+    <string name="price_currency_placeholder" translatable="false">€</string>
+    <string name="discount_units">%</string>
+
+    <!-- Sales label [CHAR LIMIT = 10 ]-->
+    <string name="sales_label">sales</string>
+
+    <!-- No reference text [CHAR LIMIT = 20]-->
+    <string name="no_reference">No reference</string>
+
+    <!-- No comments text [CHAR LIMIT = NONE]-->
+    <string name="no_comments">No comments</string>
+
+    <!-- Stock buttons-->
+    <string name="minus_button" translatable="false">-</string>
+    <string name="plus_button" translatable="false">+</string>
+
+    <!-- Toolbar titles [CHAR LIMIT = 20]-->
+    <string name="inventory">Inventory</string>
+    <string name="add_product">Add product</string>
+    <string name="edit_product">Edit product</string>
+
+    <!-- Message of the unsaved changes dialog [CHAR LIMIT = NONE]-->
+    <string name="unsaved_changes">Your changes have not been saved. Are you sure you want to
+        quit?</string>
+
+    <!-- Discard changes button of the unsaved changes dialog [CHAR LIMIT = NONE]-->
+    <string name="discard_changes">Discard changes</string>
+
+    <!-- Keep editing button of the unsaved changes dialog [CHAR LIMIT = NONE]-->
+    <string name="keep_editing">Keep editing</string>
+
+    <!-- Message of the delete confirmation dialog [CHAR LIMIT = NONE]-->
+    <string name="delete_confirmation">Do you want to delete this product?</string>
+
+    <!-- Delete button of the delete confirmation dialog [CHAR LIMIT = NONE]-->
+    <string name="delete">Delete</string>
+
+    <!-- Cancel button of the delete confirmation dialog [CHAR LIMIT = NONE]-->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast messages [CHAR LIMIT = NONE]-->
+    <string name="stock_toast">Stock can\'t be less than 0</string>
+    <string name="no_name_toast">The product must have a name</string>
+    <string name="negative_price_toast">Price can\'t be negative</string>
+    <string name="invalid_discount_toast">Discount must have a value between 0 and 100</string>
+    <string name="insert_successful">Product saved</string>
+    <string name="insert_failed">Error with saving product</string>
+    <string name="update_successful">Product updated</string>
+    <string name="update_failed">Error with updating product</string>
+    <string name="delete_successful">Product deleted</string>
+    <string name="delete_failed">Error with deleting product</string>
+    <string name="permission_denied">This functionality is only available if you accept the proper
+        permissions</string>
+</resources>

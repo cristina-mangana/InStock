@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.android.instock.DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_image" />
+
+                <ImageView
+                    android:id="@+id/add_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/round_background"
+                    android:padding="@dimen/bigPadding"
+                    android:src="@drawable/ic_add_a_photo_white_24dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/match_width_edit_style"
+                android:layout_marginTop="@dimen/bigPadding"
+                android:hint="@string/name_hint"
+                android:textSize="@dimen/titleTextSize" />
+
+            <EditText
+                android:id="@+id/edit_reference"
+                style="@style/match_width_edit_style"
+                android:layout_marginTop="@dimen/smallPadding"
+                android:hint="@string/reference_hint"
+                android:textSize="@dimen/normalTextSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallPadding"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="@dimen/smallPadding">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_noCaps_text"
+                        android:text="@string/stock_header" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/smallPadding"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/minus_button"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="@dimen/buttonDimen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/mediumPadding"
+                            android:text="@string/minus_button" />
+
+                        <TextView
+                            android:id="@+id/stock"
+                            style="@style/subhead_center_vertical_text"
+                            android:layout_margin="@dimen/smallPadding"
+                            android:text="@string/stock_hint" />
+
+                        <Button
+                            android:id="@+id/plus_button"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="@dimen/buttonDimen"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/mediumPadding"
+                            android:text="@string/plus_button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/smallPadding"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_price"
+                            style="@style/edit_input_number"
+                            android:hint="@string/price_hint" />
+
+                        <TextView
+                            android:id="@+id/currency_label"
+                            style="@style/edit_text_label_style"
+                            tools:text="@string/price_currency_placeholder" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/edit_discount"
+                            style="@style/edit_input_number"
+                            android:hint="@string/discount_hint" />
+
+                        <TextView
+                            style="@style/edit_text_label_style"
+                            android:text="@string/discount_units" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/title_allCaps_text"
+                android:layout_margin="@dimen/smallPadding"
+                android:paddingTop="@dimen/smallPadding"
+                android:text="@string/comments_header" />
+
+            <EditText
+                android:id="@+id/edit_comments"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/comments_hint"
+                android:inputType="textMultiLine"
+                android:paddingEnd="@dimen/smallPadding"
+                android:paddingLeft="@dimen/smallPadding"
+                android:paddingRight="@dimen/smallPadding"
+                android:paddingStart="@dimen/smallPadding"
+                android:textSize="@dimen/normalTextSize" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
