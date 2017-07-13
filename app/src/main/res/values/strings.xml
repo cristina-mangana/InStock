@@ -66,6 +66,10 @@
     <string name="add_product">Add product</string>
     <string name="edit_product">Edit product</string>
 
+    <!-- Email subject [CHAR LIMIT = NONE]-->
+    <string name="email_subject">Order more units of
+        <xliff.g example="Nike Air" id="product_name">%s</xliff.g></string>
+
     <!-- Message of the unsaved changes dialog [CHAR LIMIT = NONE]-->
     <string name="unsaved_changes">Your changes have not been saved. Are you sure you want to
         quit?</string>
@@ -87,7 +91,7 @@
 
     <!-- Toast messages [CHAR LIMIT = NONE]-->
     <string name="stock_toast">Stock can\'t be less than 0</string>
-    <string name="no_name_toast">The product must have a name</string>
+    <string name="no_inputs_toast">You have to input all the available fields</string>
     <string name="negative_price_toast">Price can\'t be negative</string>
     <string name="invalid_discount_toast">Discount must have a value between 0 and 100</string>
     <string name="insert_successful">Product saved</string>

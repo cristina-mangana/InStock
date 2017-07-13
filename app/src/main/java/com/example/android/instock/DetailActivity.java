@@ -207,6 +207,9 @@ public class DetailActivity extends AppCompatActivity
                 // Send an email to the provider
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
                 emailIntent.setData(Uri.parse("mailto:")); // only email apps should handle this
+                String productName = mNameTextView.getText().toString();
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+                        getString(R.string.email_subject, productName));
                 // Intent is only executed if there's an available mail app in the device
                 if (emailIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(emailIntent);

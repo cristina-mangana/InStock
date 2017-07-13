@@ -306,11 +306,16 @@ public class EditorActivity extends AppCompatActivity
         switch (id) {
             case R.id.action_done:
                 String nameString = mNameEditText.getText().toString().trim();
+                String referenceString = mReferenceEditText.getText().toString().trim();
                 String priceString = mPriceEditText.getText().toString().trim();
                 String discountString = mDiscountEditText.getText().toString().trim();
-                if (TextUtils.isEmpty(nameString)) {
-                    // If name is empty, show toast and don't save
-                    Toast.makeText(this, getString(R.string.no_name_toast),
+                String commentsString = mCommentsEditText.getText().toString().trim();
+                if (TextUtils.isEmpty(nameString) || TextUtils.isEmpty(referenceString) ||
+                        TextUtils.isEmpty(commentsString) || TextUtils.isEmpty(priceString) ||
+                        TextUtils.isEmpty(discountString) || TextUtils.isEmpty(selectedImageString)
+                        || stock == 0) {
+                    // If some field is empty, show toast and don't save
+                    Toast.makeText(this, getString(R.string.no_inputs_toast),
                             Toast.LENGTH_SHORT).show();
                 } else if (!TextUtils.isEmpty(priceString) && Double.parseDouble(priceString) < 0) {
                     // If price is negative, show toast and don't save
